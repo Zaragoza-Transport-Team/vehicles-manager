@@ -1,5 +1,5 @@
 package com.mentoring.vehicles.infrastructure.persistence.mongodb;
-
+/*
 import com.mentoring.vehicles.domain.entity.Vehicle;
 import com.mentoring.vehicles.domain.repository.VehicleRepository;
 import com.mentoring.vehicles.infrastructure.persistence.mongodb.mapper.MongoDBVehicleMapper;
@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.Optional;
 
-/* TODO implement MongoDB
+ TODO implement MongoDB
 @Component
 public class MongoDBVehicleRepositoryAdapter implements VehicleRepository {
 
