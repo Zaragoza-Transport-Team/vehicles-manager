@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.mentoring</groupId>
-	<artifactId>transporte</artifactId>
+	<artifactId>vehicles-manager</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>transporte</name>
-	<description>Demo project for Spring Boot</description>
+	<name>vehicles-manager</name>
+	<description>Application to manage vehicles of Zaragoza Transport Team</description>
 	<url/>
 	<licenses>
 		<license/>
