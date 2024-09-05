@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.Optional;
 
+/* TODO implement MongoDB
 @Component
 public class MongoDBVehicleRepositoryAdapter implements VehicleRepository {
 
@@ -20,4 +21,4 @@ public class MongoDBVehicleRepositoryAdapter implements VehicleRepository {
                 .map(mapper::map);
 
     }
-}
+}*/
