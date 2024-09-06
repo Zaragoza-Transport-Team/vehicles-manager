@@ -3,6 +3,7 @@ package com.mentoring.vehicles.domain.entity;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 
+import java.awt.*;
 import java.time.LocalTime;
 
 @Data
@@ -10,7 +11,7 @@ import java.time.LocalTime;
 public class Location {
 
     private final long vehicleId;
-    private final Coordinate coords;
+    private final Point coords;
     private final LocalTime timestamp;
 
 }

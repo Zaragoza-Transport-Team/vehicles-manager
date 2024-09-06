@@ -10,6 +10,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 import reactor.core.publisher.Mono;
 
+import java.time.LocalTime;
+
 @Component
 public class FindVehicleLocationUseCaseImpl implements FindVehicleLocationUseCase {
 
@@ -19,7 +21,7 @@ public class FindVehicleLocationUseCaseImpl implements FindVehicleLocationUseCas
 
         final Vehicle vehicle = vehicleRepository.findVehicle(request.vehicleId()).orElseThrow(() -> new DomainException("Vehicle not found.", HttpStatus.INTERNAL_SERVER_ERROR));
 
-        return Mono.defer(() -> Mono.just(new Location(vehicle.getId(), vehicle.getLocation(), vehicle.getLastUpdated())));
+        return Mono.defer(() -> Mono.just(new Location(vehicle.getId(), vehicle.getLocation(), LocalTime.now())));
 
     }
 }
